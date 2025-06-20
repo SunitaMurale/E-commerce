@@ -1,0 +1,13 @@
+.chart-wrapper {
+  width: 100%;
+  height: 300px;
+}
+
+.table thead th {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.table tbody tr:hover {
+  background-color: #eef6ff;
+}
