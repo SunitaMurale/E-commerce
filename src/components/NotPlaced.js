@@ -1,4 +1,3 @@
-// File: src/components/NotPlaced.jsx
 import React from 'react';
 
 const NotPlaced = ({ title = '⚠️ Content Not Available', message = 'This section is under construction or currently has no data.' }) => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import '../styles/ProductsPage.css'; // Create this CSS
+import '../styles/ProductsPage.css'; 
 
 const ProductsPage = () => {
   const [products, setProducts] = useState([]);
@@ -28,7 +28,7 @@ const ProductsPage = () => {
 
   return (
     <div className="container-fluid">
-      {/* Filters */}
+   
       <div className="row mb-4 g-2">
         <div className="col-md-3">
           <select onChange={e => setCategory(e.target.value)} className="form-select">
@@ -55,7 +55,7 @@ const ProductsPage = () => {
         </div>
       </div>
 
-      {/* Products Grid */}
+   
       <div className="row g-4">
         {paginated.map(product => (
           <div key={product.id} className="col-md-4">
@@ -72,7 +72,7 @@ const ProductsPage = () => {
         ))}
       </div>
 
-      {/* Pagination */}
+      
       <div className="d-flex justify-content-center gap-2 mt-4">
         {Array.from({ length: totalPages }).map((_, i) => (
           <button

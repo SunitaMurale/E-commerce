@@ -8,7 +8,7 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar bg-white shadow-sm border-end p-3">
-      {/* Top Panel with Title and Profile */}
+
       <div className="d-flex justify-content-between align-items-center mb-4">
         <h2 className="sidebar-title m-0">🛒 Admin Panel</h2>
         <img
@@ -19,7 +19,7 @@ const Sidebar = () => {
         />
       </div>
 
-      {/* Menu Items Row */}
+   
       <nav className="sidebar-nav d-flex flex-wrap gap-2">
         {menuItems.map((section) => {
           const path = section === 'Dashboard' ? '/' : `/${section.toLowerCase()}`;
